@@ -1,142 +1,148 @@
-function sayHi(dayOfWeek: number) {
-    if (dayOfWeek === 1) {
-        console.log('สวัสดีวันอาทิตย์')
-    } else if (dayOfWeek === 2) {
-        console.log('สวัสดีวันจันทร์')
-    } else if (dayOfWeek === 3) {
-        console.log('สวัสดีวันอังคาร')
-    } else if (dayOfWeek === 4) {
-        console.log('สวัสดีวันพุธ')
-    } else if (dayOfWeek === 5) {
-        console.log('สวัสดีวันพฤหัสบดี')
-    } else if (dayOfWeek === 6) {
-        console.log('สวัสดีวันศุกร์')
-    } else if (dayOfWeek === 7) {
-        console.log('สวัสดีวันเสาร์')
-    }
-}
-sayHi(5)
+// function sayHi(dayOfWeek: number) {
+//        if (dayOfWeek === 1) {
+//    console.log('สวัสดีวันอาทิตย์') 
+// } else if (dayOfWeek === 2) {
+//    console.log('สวัสดีวันจันทร์')
+// }else if (dayOfWeek === 3) {
+//    console.log('สวัสดีวันอังคาร')
+// }else if (dayOfWeek === 4) {
+//    console.log('สวัสดีวันพุธ')
+// }else if (dayOfWeek === 5) {
+//    console.log('สวัสดีวันพฤหัสบดี')
+// }else if (dayOfWeek === 6) {
+//    console.log('สวัสดีวันศุกร์')
+// }else if (dayOfWeek === 7) {
+//    console.log('สวัสดีวันเสาร์')
+//    }
+//}
 
+// sayHi(6)
 
-function sayhello(dayOfWeek: number) {
+function sayHi(dayOfWeek: number){
     switch (dayOfWeek) {
         case 1:
-            console.log('สวัสดีวันอาทิตย์')
+             console.log('สวัสดีวันอาทิตย์')
+            break
         case 2:
-            console.log('สวัสดีวันจันทร์')
+             console.log('สวัสดีวันจันทร์')
+            break
         case 3:
-            console.log('สวัสดีวันอังคาร')
+             console.log('สวัสดีวันอังคาร')
+            break
         case 4:
-            console.log('สวัสดีวันพุธ')
+             console.log('สวัสดีวันพุธ')
+            break
         case 5:
-            console.log('สวัสดีวันพฤหัสบดี')
+             console.log('สวัสดีวันพฤหัสบดี')
+            break
         case 6:
-            console.log('สวัสดีวันศุกร์')
+             console.log('สวัสดีวันศุกร์')
+            break
         case 7:
-            console.log('สวัสดีวันเสาร์')
+             console.log('สวัสดีวันเสาร์')
+            break
+        default:
+            console.log('ใส่วันมาผิด')
             break
 
     }
-
 }
-sayhello(6)
 
-function saydamy(site: string) {
-    switch (site) {
+sayHi(6)
+
+function size (shirt: string) {
+    switch (shirt) {
         case 's':
-            console.log('ผอม')
-            break
+             console.log('ผอม')
+             break
         case 'm':
-            console.log('ผอม')
-            break
+             console.log('ผอม')  
+             break
         case 'l':
-            console.log('ท้วม')
-            break
+             console.log('ท้วม')  
+             break
         case 'xl':
-            console.log('อ้วน')
-            break
-        case '2xl':
-            console.log('อ้วน')
-            break
-
+             console.log('ท้วม')  
+             break  
+        case 'xl':
+             console.log('อ้วน')  
+             break
     }
-
-}
-saydamy('2xl')
-const x: number = 46.548912348913
-
-console.log(x.toString(2))
-
-function fixedDecima(n: number, digit: number) {
-    const x = n.toFixed(digit)//(ใส่ทศนิยม)
-    return x
 }
 
-console.log(fixedDecima(40.67676, 10))
+size ('m')
+
+//  const x: number = 9999999999
+//  const y: number = 9999999999
+
+//  console.log('x',x)
+//  console.log('x',y)
+
+// const x: number = 0.4
+// const y: number = 0.2
+
+//  console.log((x * 10 + y * 10 )/ 10)
+
+//  const x: number = 10000
+
+//  console.log(x.toLocaleString())
+
+//  function fixedDecimal(n: number, digit: number) {
+//      const x = n.toFixed(digit)
+//      return x
+//  }
+// console.log(fixedDecimal(40.67676, 10))
+
+//  function sd (o:number) {
+//      const g = o. toLocaleString()
+//      return g
+//  }
+
+//  console.log(sd(1000))
+
+//  const str: string = "Hello"
+
+//  console.log(str.length)
+
+//  const str: string = "ณเดชณ์ คุคิ งุงิ"
+
+//  console.log(str.charAt(8))
 
 
-function commahahaha(n: number) {
-    const d = n.toLocaleString() //(ใส่ลูกน้ำ)
-    return d
+//  const str: string = "  ณเดชณ์ คุคิ งุงิ  "
+
+//  console.log(str.trim())
+
+
+//  const str: string = "Wasitpol"
+
+//  console.log(str.toLowerCase()) // toUpperCase
+
+
+//  function checkStringLenght(s: string) {
+//      const x = s.length
+//      return x
+//  }
+
+//  console.log(checkStringLenght("wasitpol"))
+
+
+function getCharByIndex(msg: string, index: number) {
+    return msg.charAt(index)
 }
-console.log(commahahaha(10000))
 
-const str: string = "hello"//TemplateString
-console.log(str.charAt(1))//นับตัวอักษร
+console.log(getCharByIndex('ฝนตก', 3))
 
-const std: string = 'ป๊อป คนคอน คอยรัก คอยดัก กระชาก กระเป๋า'
-console.log(std.charAt(1))//CharAt เรียกตัวอักษรออกมา(ใส่ตัวอักษรนับ)
+const str: string = 'ฉันรักเธอ'
 
+console.log(str.includes('เกลียด'))
 
-const stp: string = "ป๊อป คนคอน คอยรัก คอยดัก กระชาก กระเป๋า"
-console.log(stp.charAt(1))//trim (start,end)เอาวรรคออกเวลาrun
-
-
-const stk: string = "Surasak"
-console.log(stk.toUpperCase())//toUpperCase เป็นตัวใหญ่หมด toLowerCase เป็นตัวเล็กหมด
-
-function checkStringLength(n: string) {
-    const p = (n.length)
-    return p
-
-}
-console.log(checkStringLength('poppy'))//function ของการนับตัวอักษร length
-
-function indexggez(moohahaha: string, index: number) {
-    return moohahaha.charAt(index)//CharAt เรียกตัวอักษรออกมา(ใส่ตัวอักษรนับ)
-
-}
-console.log(indexggez('บ้าป่าว', 6))//ใส่เลขด้วยไอ้บ้า
-
-function indexggez(moohahaha: string, index: number) {
-    return moohahaha.charAt(index)//CharAt เรียกตัวอักษรออกมา(ใส่ตัวอักษรนับ)
-
-}
-console.log(indexggez('บ้าป่าว', 6))//ใส่เลขด้วยไอ้บ้า
-
-const str: string = "กูว่ามึงบ้า"
-
-console.log(str.includes('ไม่บ้า'))
-
-function amt(c: string, m: string) {
-    if (c.includes(m)) {
-        console.log(c.indexOf(m))
+function checkStrIndex(str: string, search: string) {
+    if (str.includes(search)) {
+        console.log(str.indexOf(search))
     } else {
-        console.log('ไม่พบคำที่ค้นหา')
+        console.log('ไม่พบคำค้นหา')
     }
 }
 
-amt('อยากกินขนม', 'm')//แบบฝึกในห้อง
-const str: string ='ยายมอยขายมี ยายมีขายหอย'
-
-//console.log(str.trim()) // เอา space ออกทั้งคู่
-//console.log(str.trimStart()) // เอา space ด้านหน้าออก
-//console.log(str.trimEnd()) // เอา space ด้านหลังออก
-const str: string ='ยายมอยขายมี ยายมีขายหอย'
-
-console.log(str.indexOf('ขาย')) // index ของคำไหน
-//console.log(str.includes('หอย'))
-
-const str: string = 'นายเอกสิทธิ์ ทดสอบ'
-
-console.log(str.slice(3,9))
+checkStrIndex('อยากลับ Home', 'H')
